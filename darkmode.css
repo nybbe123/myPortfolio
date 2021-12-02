@@ -1,5 +1,39 @@
-/*HEADER*/
+/*DARK MODE*/
 .dark-mode {
     background-color: #fafafa;
     color: #333333;
+}
+/*HEADER*/
+.dark-mode .header {
+    background-color: #fafafa;
+    color: #333333;
+}
+
+.dark-mode .logo {
+    background-image: url(./images/Logoblack_edited.png);
+}
+
+.dark-mode .hamburger {
+    color: #333333;
+}
+
+.dark-mode a {
+    color: #333333;
+}
+
+.dark-mode a:hover {
+    color: #eb5454;
+}
+
+.dark-mode .dark-mode-icon {
+    color: #333333;
+}
+
+.dark-mode .hamburger-menu-mobile {
+    background-color: #fafafa;
+}
+
+/*INTRO*/
+.dark-mode .main-intro {
+    background-color: #fafafa;
 }

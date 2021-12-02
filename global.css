@@ -10,8 +10,8 @@
 }
 
 @font-face {
-    font-family: raleway-reg;
-    src: url(./fonts/raleway/Raleway-Regular.ttf);
+    font-family: roboto-reg;
+    src: url(./fonts/roboto/Roboto-Regular.ttf);
 }
 
 
@@ -46,11 +46,27 @@
 
 
 /* --------------------------------- ELEMENT STYLES --------------------------------------------*/
-h1, h2, h3, h4, h5{
+body {
+    color: #d6d6d6;
+}
+
+h1, h2, h3, h4, h5 {
     font-family: montserrat-semibold, Arial, Helvetica, sans-serif;
 }
 
-p, span{
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p, span {
     font-family: montserrat-regular, Arial, Helvetica, sans-serif;
 }
 
@@ -60,11 +76,58 @@ li {
 
 a {
     text-decoration: none;
-    font-family: raleway-reg, Arial, Helvetica, sans-serif;
-    color: #fafafa;
+    font-family: roboto-reg, Arial, Helvetica, sans-serif;
+    color: #d6d6d6;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: #eb5454;
 }
 
 button {
     border: none;
     font-family: raleway-reg, Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 625px) {
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2.1rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
 }
