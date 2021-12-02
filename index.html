@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./darkmode.css">
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./intro.css">
+    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./experience.css">
     <script src="./main.js"></script>
     <title>Jonatan Nyberg</title>
 </head>
@@ -75,48 +77,110 @@
             </div>
         </section>
         <!---------------------------------- ABOUT SECTION ------------------------------------------->
-        <section class="main-about">
-            <div class="main-about-left">
-
+        <section class="main-about flex justify-center align-center">
+            <div class="about-text">
+                <h3>A <span class="text-highlight">creative</span> 
+                    and <span class="text-highlight">solutionoriented</span>
+                    person who enjoys <span class="text-highlight">collaborating</span>
+                    making positive impact through digital design & front-end.</h3>
+                    <br>
+                <p>with a bachelor's degree in digital design & innovation
+                    I have gained a solid understanding of people and their 
+                    relation to technology and how these interact with each 
+                    other and businessmodels in order to create valuable, 
+                    smart, innovative and sustainable products and services.
+                    <br>
+                    <br>
+                    Beside my bachelor's degree I have studies abroad 
+                    in Austria which has given me great experience working
+                    in multicultural teams.
+                    <br>
+                    <br>
+                    Currently I'm getting ready to master my understanding and skills 
+                    in front-end development in order to not only design design concepts
+                    but also to be able to realize them.</p>
             </div>
-            <div class="main-about-right">
-
-            </div>
+            <div class="about-img"></div>
         </section>
-       <!-- <section id="about-section" class="main-about flex justify-center align-center">
-            <div class="main-about-container flex justify-center align-center">
-                <div class="main-about-content flex flex-col">
-                    <div class="about-header">
+
+        <!----------------------------------EXPERIENCE SECTION------------------------------------------->
+        <section id="experience-section" class="main-experience flex align-center justify-center">
+            <div class="experiene-container flex align-center justify-center">
+                <div class="main-experience-left-content flex flex-col justify-start align-start gap1">
+                    <div class="main-experience-header flex flex-col">
                         <div class="red-line"></div>
-                        <span class="section-title">ABOUT ME</span>
+                        <span class="section-title">EXPERIENCE</span>
                     </div>
-                    <div class="about-text">
-                        <h4>A creative and solutionoriented
-                            person who enjoys collaborating
-                            making positive impact through
-                            digital design & front-end development.</h4>
-                            <br>
-                        <p>with a bachelor's degree in digital design & innovation
-                            I have gained a solid understanding of people and their 
-                            relation to technology and how these interact with each 
-                            other and businessmodels in order to create valuable, 
-                            smart, innovative and sustainable products and services.
-                            <br>
-                            <br>
-                            Besides my bachelor's degree I also have studies abroad 
-                            in my luggage which have given me great experience working 
-                            in multicultural teams.
-                            <br>
-                            <br>
-                            Now I'm getting ready to master my understanding and skills 
-                            in front-end development in order to, together with my 
-                            design knowledge, not only develop sustainable design 
-                            concepts but also realize them.</p>
+                    <div class="main-experience-buttons flex justify-center align-center gap4">
+                        <div class="main-experience-education flex justify-center align-center">
+                            <button id="education-button" class="education-btn flex align-center justify-center"><span class="material-icons school-icon">school</span>Education</button>
+                        </div>
+                        <div class="main-experience-work flex justify-center align-center">
+                            <button id="work-button" class="work-btn flex align-center justify-center"><span class="material-icons work-icon">work</span>Work</button>
+                        </div>
                     </div>
                 </div>
-                <div id="about-img" class="profile-img"></div>
+                    <!----------------------------------experience - education content------------------------------------------->
+                <div class="main-experience-right-content">
+                    <div id="timeline-education" class="education-timeline flex justify-center align-center">
+                        <div class="line-item"></div>
+                        <div class="point-item point-item-1"></div>
+                        <div class="education-text-content education-content-1 flex flex-col justify-center">
+                            <span class="timeline-text-1">Front-End Developer</span>
+                            <span>Polytechnic - Sweden</span>
+                            <span>2021 - ongoing</span>
+                        </div>
+                        <div class="point-item point-item-2"></div>
+                        <div class="education-text-content education-content-2 flex flex-col justify-center">
+                            <span class="timeline-text-1">IxD & Graphic webdesign</span>
+                            <span>University - Sweden</span>
+                            <span>spring 2021</span>
+                        </div>
+                        <div class="point-item point-item-3"></div>
+                        <div class="education-text-content education-content-3 flex flex-col justify-center">
+                            <span class="timeline-text-1">Study abroad</span>
+                            <span>University - Austria</span>
+                            <span>2020 - 2021</span>
+                        </div>
+                        <div class="point-item point-item-4"></div>
+                        <div class="education-text-content education-content-4 flex flex-col justify-center">
+                            <span class="timeline-text-1">Digital design & innovation</span>
+                            <span>University - Sweden</span>
+                            <span>2017 - 2020</span>
+                        </div>
+                    </div>
+
+                    <!----------------------------------experience - work content------------------------------------------->
+                    <div id="timeline-work" class="work-timeline flex justify-center align-center">
+                        <div class="line-item"></div>
+                        <div class="point-item point-item-1"></div>
+                        <div class="work-text-content work-content-1 flex flex-col justify-center">
+                            <span class="timeline-text-1">Service technician</span>
+                            <span>holidays - Thunderful</span>
+                            <span>2017 - 2021</span>
+                        </div>
+                        <div class="point-item point-item-2"></div>
+                        <div class="work-text-content work-content-2 flex flex-col justify-center">
+                            <span class="timeline-text-1">Substitute at school</span>
+                            <span>Halmstad - Sweden</span>
+                            <span>2016 - 2017</span>
+                        </div>
+                        <div class="point-item point-item-3"></div>
+                        <div class="work-text-content work-content-3 flex flex-col justify-center">
+                            <span class="timeline-text-1">Homecare</span>
+                            <span>Gothenburg - Sweden</span>
+                            <span>2015</span>
+                        </div>
+                        <div class="point-item point-item-4"></div>
+                        <div class="work-text-content work-content-4 flex flex-col justify-center">
+                            <span class="timeline-text-1">Electrician</span>
+                            <span>Kungsbacka - Sweden</span>
+                            <span>2013 - 2015</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>-->
+        </section>
     </main>
     
 </body>

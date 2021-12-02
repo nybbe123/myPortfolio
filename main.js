@@ -9,6 +9,8 @@ window.addEventListener('load', main);
  let charIndex = 0;
  let messageIndex = 0;
 
+ let activeTimeLine = false;
+
 function main() {
     setTypeEffect();
     addEventListeners();
@@ -44,6 +46,12 @@ function addEventListeners() {
 
     const darkModeBtn = document.getElementById('dark-mode-btn');
     darkModeBtn.addEventListener('click', setDarkMode);
+
+    const educationBtn = document.getElementById('education-button');
+    educationBtn.addEventListener('click', showEducationItems);
+
+    const workBtn = document.getElementById('work-button');
+    workBtn.addEventListener('click', showWorkItems);
 }
 
 function setMobileMenu() {
@@ -57,4 +65,50 @@ function setMobileMenu() {
 
 function setDarkMode() {
     document.body.classList.toggle('dark-mode');
+}
+
+/**
+ * Function that starts by checking the state of activeTimeLine. If activeTimeLine is equal to work, then it will trigger the showWorkItems function.
+ * Next the function will get and check if the education timeline-items display style is set to none or unset. If unset, then set timeline items, button and activeTimeLine to null.
+ * If the timeline-items display style instead is set to null, the function will set the display to unset, give the button a color and also change activeTimeLine to 'education'.
+ */
+ function showEducationItems() {
+    if(activeTimeLine === 'work') {
+        showWorkItems();
+    }
+    let educationItems = document.getElementById('timeline-education');
+    let educationButton = document.getElementById('education-button');
+    if(educationItems.style.display === 'unset') {
+        educationItems.style.display = null;
+        educationButton.style.color = null;
+        activeTimeLine = null;
+    } else {
+        educationItems.style.display = 'unset';
+        educationButton.style.color = '#eb5454';
+        activeTimeLine = 'education';
+    }
+}
+
+
+
+/**
+ * Function that starts by checking the state of activeTimeLine. If activeTimeLine is equal to education, then it will trigger the showWorkItems function.
+ * Next the function will get and check if the work timeline-items display style is set to none or unset. If unset, then set timeline items, button and activeTimeLine to null.
+ * If the timeline-items dispplay style instead is set to null, the function will set the display to unset, give the button a color and also change activeTimeLine to 'work'.
+ */
+ function showWorkItems() {
+    if(activeTimeLine === 'education') {
+        showEducationItems();
+    }
+    let workItems = document.getElementById('timeline-work');
+    let workButton = document.getElementById('work-button');
+    if(workItems.style.display === 'unset') {
+        workItems.style.display = null;
+        workButton.style.color = null;
+        activeTimeLine = null;
+    } else {
+        workItems.style.display = 'unset';
+        workButton.style.color = '#eb5454';
+        activeTimeLine = 'work';
+    }
 }

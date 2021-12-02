@@ -37,3 +37,21 @@
 .dark-mode .main-intro {
     background-color: #fafafa;
 }
+
+/*ABOUT*/
+.dark-mode .main-about {
+    background-color: #fafafa;
+}
+
+/*EXPERIENCE*/
+.dark-mode .main-experience {
+    background-color: #fafafa;
+}
+
+.dark-mode button {
+    color: #333333;
+}
+
+.dark-mode button:hover {
+    color: #eb5454;
+}

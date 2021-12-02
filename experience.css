@@ -1,0 +1,104 @@
+.main-experience {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    padding: 0 3rem;
+}
+
+.experience-container {
+    width: 80rem;
+}
+
+.main-experience-left-content {
+    width: 100%;
+}
+
+.work-btn {
+    gap: .5rem;
+}
+
+.education-btn {
+    gap: .5rem;
+}
+
+/*timeline*/
+.main-experience-right-content {
+    position: relative;
+    height: 25rem;
+    width: 45rem;
+}
+
+.timeline-text-1 {
+    font-family: montserrat-semibold, Arial, Helvetica, sans-serif;
+}
+
+.education-timeline {
+    display: none;
+}
+
+.work-timeline {
+    display: none;
+}
+
+.line-item {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: .2rem;
+    height: 100%;
+    background-color: #eb5454;
+}
+
+.point-item {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100px;
+    background-color: #eb5454;
+}
+
+.point-item-1 {
+    top: 0%;
+}
+
+.point-item-2 {
+    top: 33%;
+}
+
+.point-item-3 {
+    top: 66%;
+}
+
+.point-item-4 {
+    top: 96%;
+}
+
+.education-text-content, .work-text-content {
+    position: absolute;
+    gap: .8rem;
+}
+
+.education-content-1, .work-content-1 {
+    top: 0;
+    left: 1rem;
+}
+
+.education-content-2, .work-content-2 {
+    top: 33%;
+    left: 17rem;
+}
+
+.education-content-3, .work-content-3 {
+    top: 66%;
+    left: 1rem;
+}
+
+.education-content-4, .work-content-4 {
+    top: 96%;
+    left: 17rem;
+}
+
+/*media queries*/
+@media (max-width: 1375px) {
