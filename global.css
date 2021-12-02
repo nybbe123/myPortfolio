@@ -1,0 +1,70 @@
+/* --------------------------------- FONTS --------------------------------------------*/
+@font-face {
+    font-family: montserrat-semibold;
+    src: url(./fonts/montserrat/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    src: url(./fonts/montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: raleway-reg;
+    src: url(./fonts/raleway/Raleway-Regular.ttf);
+}
+
+
+
+/* --------------------------------- GLOBAL STYLES --------------------------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* --------------------------------- REUSABLE CLASSES --------------------------------------------*/
+/* ----------- Flex -----------*/
+.flex {display: flex;}
+.flex-col {flex-direction: column;}
+.justify-center {justify-content: center;}
+.justify-start {justify-content: flex-start;}
+.justify-between {justify-content: space-between;}
+.align-center {align-items: center;}
+.align-start {align-items: flex-start;}
+.wrap {flex-wrap: wrap;}
+.wrap-reverse {flex-wrap: wrap-reverse;}
+
+.gap2 {gap: 2rem;}
+.gap3 {gap: 3rem;}
+.gap4 {gap: 4rem;}
+.gap5 {gap: 5rem;}
+.gap6 {gap: 6rem;}
+
+
+
+/* --------------------------------- ELEMENT STYLES --------------------------------------------*/
+h1, h2, h3, h4, h5{
+    font-family: montserrat-semibold, Arial, Helvetica, sans-serif;
+}
+
+p, span{
+    font-family: montserrat-regular, Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: raleway-reg, Arial, Helvetica, sans-serif;
+    color: #fafafa;
+}
+
+button {
+    border: none;
+    font-family: raleway-reg, Arial, Helvetica, sans-serif;
+}
