@@ -17,6 +17,10 @@
     display: none;
 }
 
+.hamburger:hover {
+    color: #eb5454;
+}
+
 .logo {
     background-image: url(./images/LOGO-W_edited.png);
     background-size: cover;
@@ -78,5 +82,15 @@
 
     .header-nav-ul {
         display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .dark-mode-icon {
+        font-size: 1.6rem;
+    }
+
+    .hamburger {
+        font-size: 1.9rem;
     }
 }
