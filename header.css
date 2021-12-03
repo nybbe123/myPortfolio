@@ -51,11 +51,13 @@
 
 .hamburger-menu-mobile {
     position: fixed;
+    z-index: 99;
     top: -100%;
     width: 100%;
     height: 100vh;
     background-color: rgb(10, 10, 10);
     transition: 350ms;
+    display: none;
 }
 
 .mobile-header-nav {
@@ -82,6 +84,10 @@
 
     .header-nav-ul {
         display: none;
+    }
+
+    .hamburger-menu-mobile {
+        display: unset;
     }
 }
 

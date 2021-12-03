@@ -1,0 +1,44 @@
+.main-skills {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    padding-bottom: 15rem;
+}
+
+.skill-box {
+    width: 400px;
+    height: 90px;
+    background-color: #181818;
+    color: #aaaaaa;
+    border-radius: 6px;
+    padding: 2rem 2rem;
+    gap: .7rem;
+    transition: 100ms;
+}
+
+.skill-box:hover {
+    background: #eb5454;
+    cursor: pointer;
+}
+
+.skills-text-title {
+    font-size: 1.2rem;
+    color: #fafafa;
+    margin-bottom: 1rem;
+}
+
+.arrow-up-icon {
+    margin-bottom: 1rem;
+}
+
+.design-text-box {
+    display: none;
+}
+
+.develop-text-box {
+    display: none;
+}
+
+.tools-text-box {
+    display: none;
+}

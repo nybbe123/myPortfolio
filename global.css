@@ -37,6 +37,7 @@
 .wrap {flex-wrap: wrap;}
 .wrap-reverse {flex-wrap: wrap-reverse;}
 
+.gap06 {gap: .6rem};
 .gap1 {gap: 1rem;}
 .gap2 {gap: 2rem;}
 .gap3 {gap: 3rem;}
@@ -148,6 +149,19 @@ button:hover {
     h3 {
         font-size: 1.4rem;
     }
+
+    .red-line {
+        height: .3rem;
+        width: 1.6rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    button {
+        font-size: 1.4rem;
+    }
 }
 
 @media (max-width: 500px) {
@@ -161,5 +175,15 @@ button:hover {
     
     h3 {
         font-size: 1.2rem;
+    }
+
+    .red-line {
+        height: .3rem;
+        width: 1.4rem;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        margin-left: -.2rem;
     }
 }

@@ -52,6 +52,15 @@ function addEventListeners() {
 
     const workBtn = document.getElementById('work-button');
     workBtn.addEventListener('click', showWorkItems);
+
+    const designBtn = document.getElementById('design-box');
+    designBtn.addEventListener('click', showDesignSkillsBox);
+
+    const developBtn = document.getElementById('develop-box');
+    developBtn.addEventListener('click', showDevelopSkillsBox);
+
+    const toolBtn = document.getElementById('tool-box');
+    toolBtn.addEventListener('click', showToolSkillsBox);
 }
 
 function setMobileMenu() {
@@ -110,5 +119,55 @@ function setDarkMode() {
         workItems.style.display = 'unset';
         workButton.style.color = '#eb5454';
         activeTimeLine = 'work';
+    }
+}
+
+
+
+
+/**
+ * Function that starts by checking the state of activeTimeLine. If activeTimeLine is equal to work, then it will trigger the showWorkItems function.
+ * Next the function will get and check if the education timeline-items display style is set to none or unset. If unset, then set timeline items, button and activeTimeLine to null.
+ * If the timeline-items display style instead is set to null, the function will set the display to unset, give the button a color and also change activeTimeLine to 'education'.
+ */
+ function showDesignSkillsBox() {
+    const designSkillsBox = document.getElementById('design-box');
+    const designTextBox = document.getElementById('design-text');
+    if(designSkillsBox.style.height === '270px') {
+        designSkillsBox.style.height = null;
+        designTextBox.style.display = null;
+    } else {
+        designSkillsBox.style.height = '270px';
+        designTextBox.style.display = 'flex';
+    }
+}
+
+
+
+
+function showDevelopSkillsBox() {
+    const developSkillsBox = document.getElementById('develop-box');
+    const developTextBox = document.getElementById('develop-text');
+    if(developSkillsBox.style.height === '270px') {
+        developSkillsBox.style.height = null;
+        developTextBox.style.display = null;
+    } else {
+        developSkillsBox.style.height = '270px';
+        developTextBox.style.display = 'flex';
+    }
+}
+
+
+
+
+function showToolSkillsBox() {
+    const toolSkillsBox = document.getElementById('tool-box');
+    const toolTextBox = document.getElementById('tool-text');
+    if(toolSkillsBox.style.height === '270px') {
+        toolSkillsBox.style.height = null;
+        toolTextBox.style.display = null;
+    } else {
+        toolSkillsBox.style.height = '270px';
+        toolTextBox.style.display = 'flex';
     }
 }

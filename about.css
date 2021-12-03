@@ -6,7 +6,7 @@
 
 .about-text {
     margin-right: -6rem;
-    z-index: 99;
+    z-index: 98;
     margin-bottom: 6rem;
 }
 
@@ -68,5 +68,59 @@
     .about-text > p {
         width: 39rem;
         text-align: justify;
+    }
+}
+
+@media (max-width: 900px) {
+    .main-about {
+        gap: 2rem;
+    }
+
+    .about-img {
+        height: 400px;
+        width: 550px;
+    }
+
+    .about-text > h3 {
+        width: 38rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .about-text > p {
+        width: 28rem;
+    }
+}
+
+@media (max-width: 625px) {
+    .about-img {
+        height: 300px;
+        width: 400px;
+    }
+
+    .about-text > h3 {
+        width: 27rem;
+        font-size: 1.6rem;
+    }
+    
+    .about-text > p {
+        width: 24rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-img {
+        height: 200px;
+        width: 300px;
+    }
+
+    .about-text > h3 {
+        text-align: start;
+        width: 18rem;
+        font-size: 1.4rem;
+    }
+    
+    .about-text > p {
+        width: 18rem;
     }
 }
