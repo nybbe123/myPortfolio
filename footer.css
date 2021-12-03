@@ -1,0 +1,29 @@
+.footer {
+    background-color: black;
+    padding: 12rem 2rem;
+    background-color: rgb(10, 10, 10);
+}
+
+.footer-container {
+    gap: 1rem;
+}
+
+.footer-container > p {
+    text-align: center;
+}
+
+.contact-email {
+    font-family: raleway-reg, Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    transition: 150ms;
+}
+
+.contact-email:hover {
+    color: #eb5454;
+}
+
+@media (max-wdith: 1375px) {
+    .footer {
+        padding: 6rem 2rem;
+    }
+}

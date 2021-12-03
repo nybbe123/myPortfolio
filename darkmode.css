@@ -55,3 +55,26 @@
 .dark-mode button:hover {
     color: #eb5454;
 }
+
+/*SKILLS*/
+.dark-mode .main-skills {
+    background-color: #fafafa;
+}
+
+.dark-mode .skill-box {
+    background-color: #333333;
+}
+
+/*PORTFOLIO*/
+.dark-mode .main-portfolio {
+    background-color: #fafafa;
+}
+
+.dark-mode .portfolio-text {
+    color: #333333
+}
+
+/*FOOTER*/
+.dark-mode .footer {
+    background-color: #fafafa;
+}

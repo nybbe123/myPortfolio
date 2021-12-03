@@ -1,0 +1,50 @@
+.main-portfolio {
+    background-color: rgb(10, 10, 10);
+    padding: 12rem 2rem;
+    width: 100%;
+    gap: 6rem;
+}
+
+.portfolio-container {
+    padding: 0 2rem;
+}
+
+.portfolio-content {
+    max-width: 85rem;
+    gap: 6rem;
+    text-align: center;
+}
+
+.portfolio-top {
+    gap: 1rem;
+    max-width: 30rem;
+}
+
+.github-icon {
+    font-size: 36px;
+    color: rgb(21, 91, 182);
+}
+
+.portfolio-text {
+    color: #d6d6d6;
+}
+
+.portfolio-link {
+    transition: 150ms;
+    margin-top: 1rem;
+}
+
+.portfolio-link:hover {
+    color: #eb5454;
+}
+
+@media (max-width: 1375px) {
+    .main-portfolio {
+        padding: 6rem 2rem;
+    }
+
+    .portfolio-content {
+        flex-direction: column;
+        max-width: 30rem;
+    }
+}

@@ -1,7 +1,11 @@
 window.addEventListener('load', main);
 
 /**
- * State
+ * States for the setTypeEffect function.
+ * message variable which contains an array with the character and words to be displayed
+ * typeSpeed variable that set the delay between each character
+ * nextMessageDelay variable that set the delay between each word in the message arrays
+ * charIndex and messageIndex set to zero for the loop to function.
  */
  const messages = ['Front-End Developer.', 'Digital designer.'];
  const typeSpeed = 100;
@@ -9,12 +13,27 @@ window.addEventListener('load', main);
  let charIndex = 0;
  let messageIndex = 0;
 
+ /**
+  * activeTimeLine variable used to make sure that the showEducationItems and showWorkItems function isnt open at the same time.
+  */
  let activeTimeLine = false;
 
+
+
+
+
+/**
+ * function that is called when the document has loaded.
+ * Function will in turn call other functions straight away.
+ */
 function main() {
     setTypeEffect();
     addEventListeners();
 }
+
+
+
+
 
 /**
  * Function with a typeEffect that will loop through messages array and return and display a single character at a time.
@@ -40,6 +59,12 @@ function main() {
     }
 }
 
+
+
+
+/**
+ * EventListener function that will take in events and run functions.
+ */
 function addEventListeners() {
     const hamburgerBtn = document.getElementById('hamburger-btn');
     hamburgerBtn.addEventListener('click', setMobileMenu);
@@ -63,6 +88,13 @@ function addEventListeners() {
     toolBtn.addEventListener('click', showToolSkillsBox);
 }
 
+
+
+
+
+/**
+ * Function that will display the mobile menu
+ */
 function setMobileMenu() {
     const hamburgerMenu = document.getElementById('hamburger-menu');
     if(hamburgerMenu.style.top === '2rem') {
@@ -72,9 +104,20 @@ function setMobileMenu() {
     }
 }
 
+
+
+
+
+/**
+ * Function that will toggle between class styles and change the interface to a light or dark background.
+ */
 function setDarkMode() {
     document.body.classList.toggle('dark-mode');
 }
+
+
+
+
 
 /**
  * Function that starts by checking the state of activeTimeLine. If activeTimeLine is equal to work, then it will trigger the showWorkItems function.
@@ -97,6 +140,8 @@ function setDarkMode() {
         activeTimeLine = 'education';
     }
 }
+
+
 
 
 
@@ -125,49 +170,64 @@ function setDarkMode() {
 
 
 
+
 /**
- * Function that starts by checking the state of activeTimeLine. If activeTimeLine is equal to work, then it will trigger the showWorkItems function.
- * Next the function will get and check if the education timeline-items display style is set to none or unset. If unset, then set timeline items, button and activeTimeLine to null.
- * If the timeline-items display style instead is set to null, the function will set the display to unset, give the button a color and also change activeTimeLine to 'education'.
+ * Function that will get and check the height style of the design-box and toggle between showing it or not
  */
  function showDesignSkillsBox() {
     const designSkillsBox = document.getElementById('design-box');
     const designTextBox = document.getElementById('design-text');
+    const designArrow = document.getElementById('design-arrow-down');
     if(designSkillsBox.style.height === '270px') {
         designSkillsBox.style.height = null;
         designTextBox.style.display = null;
+        designArrow.style.transform = null;
     } else {
         designSkillsBox.style.height = '270px';
         designTextBox.style.display = 'flex';
+        designArrow.style.transform = 'rotate(180deg)';
     }
 }
 
 
 
 
+
+/**
+ * Function that will get and check the height style of the develop-box and toggle between showing it or not
+ */
 function showDevelopSkillsBox() {
     const developSkillsBox = document.getElementById('develop-box');
     const developTextBox = document.getElementById('develop-text');
+    const developArrow = document.getElementById('develop-arrow-down');
     if(developSkillsBox.style.height === '270px') {
         developSkillsBox.style.height = null;
         developTextBox.style.display = null;
+        developArrow.style.transform = null;
     } else {
         developSkillsBox.style.height = '270px';
         developTextBox.style.display = 'flex';
+        developArrow.style.transform = 'rotate(180deg)';
     }
 }
 
 
 
 
+/**
+ * Function that will get and check the height style of the tool-box and toggle between showing it or not
+ */
 function showToolSkillsBox() {
     const toolSkillsBox = document.getElementById('tool-box');
     const toolTextBox = document.getElementById('tool-text');
+    const toolArrow = document.getElementById('tool-arrow-down');
     if(toolSkillsBox.style.height === '270px') {
         toolSkillsBox.style.height = null;
         toolTextBox.style.display = null;
+        toolArrow.style.transform = null;
     } else {
         toolSkillsBox.style.height = '270px';
         toolTextBox.style.display = 'flex';
+        toolArrow.style.transform = 'rotate(180deg)';
     }
 }

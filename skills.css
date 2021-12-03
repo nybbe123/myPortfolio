@@ -1,8 +1,7 @@
 .main-skills {
-    height: 100vh;
+    padding: 12rem 2rem;
     width: 100%;
     background-color: rgb(10, 10, 10);
-    padding-bottom: 15rem;
 }
 
 .skill-box {
@@ -41,4 +40,21 @@
 
 .tools-text-box {
     display: none;
+}
+
+@media (max-width: 1375px) {
+    .main-skills {
+        padding: 6rem 2rem;
+    }
+
+    .skills-boxes {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .skill-box {
+        width: 300px;
+        height: 90px;
+    }
 }
