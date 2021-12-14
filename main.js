@@ -27,10 +27,40 @@ window.addEventListener('load', main);
  * Function will in turn call other functions straight away.
  */
 function main() {
+    makeItRain();
     setTypeEffect();
     addEventListeners();
 }
 
+
+
+/**
+ * Creates elements and sets random positions from loop.
+ * randomize the css animation to make it look like raining.
+ */
+function makeItRain() {
+    let amountOfDrops = 75;
+    let introSection = document.getElementById('intro-section');
+    let i = 0;
+
+    while(i < amountOfDrops) {
+        let drop = document.createElement('i');
+        drop.className = 'drop-item';
+
+        let size = Math.random() * 5;
+        let posX = Math.floor(Math.random() * window.innerWidth);
+        let delay = Math.random() * -20;
+        let duration = Math.random() * 8;
+
+        drop.style.width = .2 + size + 'px';
+        drop.style.animationDelay = delay + 's';
+        drop.style.animationDuration = 1 + duration + 's';
+        drop.style.left = posX + 'px';
+
+        introSection.append(drop);
+        i++
+    }
+}
 
 
 
