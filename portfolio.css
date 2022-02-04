@@ -32,6 +32,7 @@
 .portfolio-link {
     transition: 150ms;
     margin-top: 1rem;
+    font-weight: 600;
 }
 
 .portfolio-link:hover {
